@@ -36,7 +36,7 @@ final class router
         $this->host     = $_SERVER['HTTP_HOST'];
         $this->baseUrl  = $this->protocol.'://'.$this->host;
         $this->url      = $this->protocol.'://'.$this->host.$_SERVER['SCRIPT_NAME'];
-        $this->media_url  = App::instance()->config['media_url'] ?: $this->baseUrl;
+        $this->media_url  = App::instance()->config['media_url'] ?: dirname($this->url);
         $this->path     = '';
 
         if (PHP_SAPI != 'cli') {
@@ -67,6 +67,7 @@ final class router
                 }
             }
         }
+
 
         $this->_params = explode('/', trim($this->path, '/'));
 
