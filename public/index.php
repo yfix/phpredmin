@@ -1,8 +1,11 @@
 <?php
 
+$app_path = dirname(__DIR__).'/';
+
 function __autoload($class)
 {
-    $path = dirname(__DIR__).'/';
+	global $app_path;
+    $path = $app_path;
     if (preg_match('/^(.*)_Controller$/', $class, $matches)) {
         $class = $matches[1];
         $dir   = 'controllers';
