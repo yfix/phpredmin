@@ -2,7 +2,7 @@
 
 function __autoload($class)
 {
-    $path = '../';
+    $path = dirname(__DIR__).'/';
     if (preg_match('/^(.*)_Controller$/', $class, $matches)) {
         $class = $matches[1];
         $dir   = 'controllers';
@@ -16,7 +16,7 @@ function __autoload($class)
         $dir = 'libraries';
     }
 
-    include_once($path.$dir.'/'.(strtolower($class)).'.php');
+    include_once ($path. $dir.'/'.(strtolower($class)).'.php');
 }
 
 if (isset(App::instance()->config['timezone'])) {

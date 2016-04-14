@@ -38,6 +38,7 @@ final class router
         $this->url      = $this->protocol.'://'.$this->host.$_SERVER['SCRIPT_NAME'];
         $this->media_url  = App::instance()->config['media_url'] ?: dirname($this->url);
         $this->path     = '';
+        $this->app_path = dirname(__DIR__).'/';
 
         if (PHP_SAPI != 'cli') {
             $this->path = str_replace($_SERVER['SCRIPT_NAME'], '', $_SERVER['REQUEST_URI']);
@@ -67,7 +68,6 @@ final class router
                 }
             }
         }
-
 
         $this->_params = explode('/', trim($this->path, '/'));
 

@@ -8,7 +8,7 @@ final class template
         ini_set('short_open_tag', 'On');
 
         if (!isset(self::$_instances[$driver])) {
-            include_once(App::instance()->drivers.'template/'.(strtolower($driver)).'.php');
+            include_once (App::instance()->drivers.'template/'.(strtolower($driver)).'.php');
 
             $class  = ucwords(strtolower($driver)).'Template';
             self::$_instances[$driver] = new $class;
