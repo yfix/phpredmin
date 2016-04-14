@@ -7,13 +7,24 @@ final class app
 
     protected function __construct()
     {
-		global $app_path, $config;
+		global $app_path, $config, $config_override;
 		if (!$config) {
 			$config_path_default = $app_path.'/config/config.php';
 			if (file_exists($config_path_default)) {
 				$config_path = $config_path_default;
 			}
 			$config = include_once $config_path;
+		}
+		if (isset($config_override) && is_array($config_override) && $config_override) {
+			foreach((array)$config_override as $k => $v) {
+				if (is_array($v)) {
+					foreach ($v as $k2 => $v2) {
+						$config[$k][$k2] = $v2;
+					}
+				} else {
+					$config[$k] = $v;
+				}
+			}
 		}
         $this->_data['config']  = $config;
         $this->_data['drivers'] = __DIR__.'/drivers/';
