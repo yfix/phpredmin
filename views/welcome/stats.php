@@ -1,7 +1,14 @@
-<?php $this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/nvd3/lib/d3.v2.min.js\"></script>"); ?>
-<?php $this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/nvd3/nv.d3.js\"></script>"); ?>
-<?php $this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/moment.min.js\"></script>"); ?>
-<?php $this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/jquery-ui/js/jquery-ui.min.js\"></script>"); ?>
+<?php
+/*
+$this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/nvd3/lib/d3.v2.min.js\"></script>");
+$this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/nvd3/nv.d3.js\"></script>");
+$this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/moment.min.js\"></script>");
+$this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/jquery-ui/js/jquery-ui.min.js\"></script>");
+*/
+$this->addHeader('<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>');
+$this->addHeader('<script src="//cdn.rawgit.com/novus/nvd3/master/build/nv.d3.min.js" type="text/javascript"></script>');
+$this->addHeader('<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment-with-locales.min.js" type="text/javascript"></script>');
+?>
 <script type="text/javascript">
     $(document).ready(function() {
         getStats(['memory', 'cpu', 'clients', 'keys', 'commands', 'dbkeys', 'dbexpires', 'aof']);

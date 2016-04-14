@@ -12,16 +12,14 @@
 	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.css" rel="stylesheet" />
 	<link href="//cdn.rawgit.com/novus/nvd3/master/build/nv.d3.min.css" rel="stylesheet" />
-
 	<link rel="stylesheet" media="all" type="text/css" href="<?=$this->router->baseUrl?>/css/custom.css" />
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
 	<!--script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script-->
 	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
-	<script src="//cdn.rawgit.com/novus/nvd3/master/build/nv.d3.min.js" type="text/javascript"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment-with-locales.min.js" type="text/javascript"></script>
-
+	<!--script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script-->
+	<!--script src="//cdn.rawgit.com/novus/nvd3/master/build/nv.d3.min.js" type="text/javascript"></script-->
+	<!--script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment-with-locales.min.js" type="text/javascript"></script-->
     <script type="text/javascript" src="<?=$this->router->baseUrl?>/js/redmin/main.js"></script>
     <script type="text/javascript" src="<?=$this->router->baseUrl?>/js/redmin/modal.js"></script>
 
