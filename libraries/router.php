@@ -108,8 +108,11 @@ final class router
 
 		$config = App::instance()->config;
         $session = Session::instance();
-		$this->auth_ok = $session->get('auth_ok');
-		if (isset($config['auth']['pswd']) && !$this->auth_ok) {
+		$this->auth_ok = true;
+		if (isset($config['auth']) && $config['auth'] && !$session->get('auth_ok')) {
+			$this->auth_ok = false;
+		}
+		if (!$this->auth_ok) {
 	        $this->controller = 'Auth';
     	    $this->action = 'Index';
 		}
