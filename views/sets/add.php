@@ -1,4 +1,4 @@
-<?php $this->addHeader("<script src=\"{$this->router->baseUrl}/js/redmin/sets.js\" type=\"text/javascript\"></script>"); ?>
+<?php $this->addHeader('<script src="'.$this->router->media_url.'/js/redmin/sets.js" type="text/javascript"></script>'); ?>
 <form class="form">
     <legend><?= isset($this->oldkey) ? "" : "Add Set"; ?></legend>
     <div class="input-prepend">

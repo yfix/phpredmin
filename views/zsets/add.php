@@ -1,4 +1,4 @@
-<?php $this->addHeader("<script src=\"{$this->router->baseUrl}/js/redmin/zsets.js\" type=\"text/javascript\"></script>"); ?>
+<?php $this->addHeader('<script src="'.$this->router->media_url.'/js/redmin/zsets.js" type="text/javascript"></script>'); ?>
 <form class="form">
     <legend><?php if (isset($this->oldkey)) {
     echo "";

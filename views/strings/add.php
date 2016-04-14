@@ -1,4 +1,4 @@
-<?php $this->addHeader("<script src=\"{$this->router->baseUrl}/js/redmin/strings.js\" type=\"text/javascript\"></script>"); ?>
+<?php $this->addHeader('<script src="'.$this->router->media_url.'/js/redmin/strings.js" type="text/javascript"></script>'); ?>
 <form class="form">
     <legend>Add String</legend>
     <div class="input-prepend">

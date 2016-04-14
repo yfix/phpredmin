@@ -1,4 +1,4 @@
-<?php $this->addHeader("<script src=\"{$this->router->baseUrl}/js/redmin/actions.js\" type=\"text/javascript\"></script>"); ?>
+<?php $this->addHeader('<script src="'.$this->router->media_url.'/js/redmin/actions.js" type="text/javascript"></script>'); ?>
 <div id='mainContainer'>
     <h3>Edit Set</h3>
     <?=$this->renderPartial('sets/add', array('oldkey' => $this->key))?>

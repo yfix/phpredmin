@@ -1,4 +1,4 @@
-<?php $this->addHeader("<script src=\"{$this->router->baseUrl}/js/redmin/lists.js\" type=\"text/javascript\"></script>"); ?>
+<?php $this->addHeader('<script src="'.$this->router->media_url.'/js/redmin/lists.js" type="text/javascript"></script>'); ?>
 <form class="form">
     <legend><?= isset($this->oldkey) ? "" : "Add List" ?></legend>
     <div class="input-prepend">

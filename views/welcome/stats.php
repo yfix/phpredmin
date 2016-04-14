@@ -1,9 +1,9 @@
 <?php
 /*
-$this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/nvd3/lib/d3.v2.min.js\"></script>");
-$this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/nvd3/nv.d3.js\"></script>");
-$this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/moment.min.js\"></script>");
-$this->addHeader("<script type=\"text/javascript\" src=\"{$this->router->baseUrl}/js/jquery-ui/js/jquery-ui.min.js\"></script>");
+$this->addHeader('<script type="text/javascript" src="'.$this->router->media_url.'/js/nvd3/lib/d3.v2.min.js"></script>');
+$this->addHeader('<script type="text/javascript" src="'.$this->router->media_url.'/js/nvd3/nv.d3.js"></script>');
+$this->addHeader('<script type="text/javascript" src="'.$this->router->media_url.'/js/moment.min.js"></script>');
+$this->addHeader('<script type="text/javascript" src="'.$this->router->media_url.'/js/jquery-ui/js/jquery-ui.min.js"></script>');
 */
 $this->addHeader('<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>');
 $this->addHeader('<script src="//cdn.rawgit.com/novus/nvd3/master/build/nv.d3.min.js" type="text/javascript"></script>');

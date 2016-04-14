@@ -1,4 +1,4 @@
-<?php $this->addHeader("<script src=\"{$this->router->baseUrl}/js/redmin/remlists.js\" type=\"text/javascript\"></script>"); ?>
+<?php $this->addHeader('<script src="'.$this->router->media_url.'/js/redmin/remlists.js" type="text/javascript"></script>'); ?>
 <div id='mainContainer'>
     <h3>Edit List</h3>
     <?=$this->renderPartial('lists/add', array('oldkey' => $this->key))?>
