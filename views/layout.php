@@ -35,6 +35,7 @@
 </head>
 <body>
     <div class="container">
+<?php if ($this->router->auth_ok) { ?>
         <div class="row">
             <div class="navbar span12 navbar-inverse">
                 <div class="navbar-inner">
@@ -138,9 +139,12 @@
                 </ul>
             </div>
         </div>
+<?php } ?>
         <div class="row">
             <div class="span2">
+<?php if ($this->router->auth_ok) { ?>
                 <?= $this->renderPartial('navigation') ?>
+<?php } ?>
             </div>
             <div class="span10">
                 <div class="row-fluid">

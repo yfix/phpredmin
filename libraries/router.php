@@ -105,6 +105,15 @@ final class router
 
     public function route()
     {
+
+		$config = App::instance()->config;
+        $session = Session::instance();
+		$this->auth_ok = $session->get('auth_ok');
+		if (isset($config['auth']['pswd']) && !$this->auth_ok) {
+	        $this->controller = 'Auth';
+    	    $this->action = 'Index';
+		}
+
         $class  = $this->controller.'_Controller';
         $method = $this->action.'Action';
 
