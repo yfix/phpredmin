@@ -4,16 +4,27 @@
     <title>PHPRedmin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" media="all" type="text/css" href="<?=$this->router->baseUrl?>/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" media="all" type="text/css" href="<?=$this->router->baseUrl?>/bootstrap/css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" media="all" type="text/css" href="<?=$this->router->baseUrl?>/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" media="all" type="text/css" href="<?=$this->router->baseUrl?>/js/nvd3/src/nv.d3.css" />
+
+	<!--link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" /-->
+	<!--link href="//netdna.bootstrapcdn.com/bootswatch/3.3.2/slate/bootstrap.min.css" rel="stylesheet" /-->
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
+	<!--link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /-->
+	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.css" rel="stylesheet" />
+	<link href="//cdn.rawgit.com/novus/nvd3/master/build/nv.d3.min.css" rel="stylesheet" />
+
 	<link rel="stylesheet" media="all" type="text/css" href="<?=$this->router->baseUrl?>/css/custom.css" />
-	<link rel="stylesheet" media="all" type="text/css" href="<?=$this->router->baseUrl?>/js/jquery-ui/css/jquery-ui.min.css" />
-    <script type="text/javascript" src="<?=$this->router->baseUrl?>/js/jquery.min.js"></script>
-    <script type="text/javascript" src="<?=$this->router->baseUrl?>/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+	<!--script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script-->
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="//cdn.rawgit.com/novus/nvd3/master/build/nv.d3.min.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment-with-locales.min.js" type="text/javascript"></script>
+
     <script type="text/javascript" src="<?=$this->router->baseUrl?>/js/redmin/main.js"></script>
     <script type="text/javascript" src="<?=$this->router->baseUrl?>/js/redmin/modal.js"></script>
+
     <?php foreach ($this->getHeaders() as $header) {
     echo $header."\n";
 } ?>

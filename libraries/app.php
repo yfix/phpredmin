@@ -7,7 +7,7 @@ final class app
 
     protected function __construct()
     {
-        $this->_data['config']  = include_once('../config.php');
+        $this->_data['config']  = include_once(dirname(__DIR__).'/config/config.php');
         $this->_data['drivers'] = 'drivers/';
     }
 
