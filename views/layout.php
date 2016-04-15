@@ -81,7 +81,7 @@
                                     </li>
                                 <?php endif; ?>
                                 <li>
-                                    <a href="https://github.com/sasanrose/phpredmin" target="_blank">
+                                    <a href="https://github.com/yfix/phpredmin" target="_blank">
                                         <i class="icon-white icon-github"></i> GitHub
                                     </a>
                                 </li>
