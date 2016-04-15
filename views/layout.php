@@ -15,6 +15,7 @@
 	<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.css" rel="stylesheet" />
 	<link href="//cdn.rawgit.com/novus/nvd3/master/build/nv.d3.min.css" rel="stylesheet" />
 	<link rel="stylesheet" media="all" type="text/css" href="<?=$this->router->media_url?>/css/custom.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="<?=$this->router->media_url?>/css/bs2_fixes.css" />
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
 	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js" type="text/javascript"></script>
